@@ -8,9 +8,18 @@ const totalAmount = readlineSync.questionFloat("What is the total amount of the 
 
 const totalPartySize = readlineSync.questionInt("How many people are in your party?")
 
-// Get the % of the tip form user.
+let tipPercentage;
 
-const tipPercentage = readlineSync.questionFloat("What percentage will you like to pay?")
+if (totalPartySize >= 6) {
+  // If the party is six or more people then skip
+  // over the percentage and force it to be 18%.
+  tipPercentage = 18;
+} else {
+  // Get the % of the tip from the user
+  tipPercentage = readlineSync.questionFloat(
+    "What % would you like to tip? "
+  );
+}
 
 // Repeat all of those things back to the user.
 
