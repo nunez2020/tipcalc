@@ -1,0 +1,11 @@
+{
+  "name": "tipcalc",
+  "version": "1.0.0",
+  "main": "tipcalc.js",
+  "repository": "https://github.com/nunez2020/tipcalc.git",
+  "author": "nunez2020 <nunez.nunez21@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "readline-sync": "1.4.10"
+  }
+}
